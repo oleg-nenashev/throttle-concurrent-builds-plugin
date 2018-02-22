@@ -33,7 +33,7 @@ THE SOFTWARE.
   <packaging>hpi</packaging>
   <name>Jenkins Throttle Concurrent Builds Plug-in</name>
   <version>2.0.2-SNAPSHOT</version>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Throttle+Concurrent+Builds+Plugin</url>
+  <url>https://wiki.jenkins.io/display/JENKINS/Throttle+Concurrent+Builds+Plugin</url>
   <description>Plugin to throttle the number of concurrent builds of a single job per node.</description>
   
   <licenses>
