@@ -26,7 +26,7 @@ THE SOFTWARE.
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.26</version>
+    <version>3.5</version>
   </parent>
 
   <artifactId>throttle-concurrents</artifactId>
@@ -44,8 +44,8 @@ THE SOFTWARE.
   </licenses>
     
   <properties>
-    <jenkins.version>1.642.3</jenkins.version>
-    <java.level>6</java.level>
+    <jenkins.version>2.7.3</jenkins.version>
+    <java.level>7</java.level>
     <!--TODO: do not fail on errors-->
     <findbugs.failOnError>false</findbugs.failOnError>
     <java.level>7</java.level>
@@ -62,7 +62,6 @@ THE SOFTWARE.
       <id>oleg_nenashev</id>
       <name>Oleg Nenashev</name>
       <email>o.v.nenashev@gmail.com</email>
-      <timezone>+3</timezone>
     </developer>
   </developers>
   
@@ -76,7 +75,7 @@ THE SOFTWARE.
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
 
@@ -91,7 +90,7 @@ THE SOFTWARE.
     <pluginRepositories>
         <pluginRepository>
             <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
+            <url>https://repo.jenkins-ci.org/public/</url>
         </pluginRepository>
     </pluginRepositories>
     <dependencies>
@@ -132,13 +131,25 @@ THE SOFTWARE.
         <dependency>
           <groupId>org.jenkins-ci.plugins</groupId>
           <artifactId>matrix-auth</artifactId>
-          <version>1.4</version>
+          <version>1.7</version>
           <scope>test</scope>
+          <exclusions>
+            <exclusion>
+              <groupId>org.jenkins-ci.plugins.icon-shim</groupId>
+              <artifactId>icon-set</artifactId>
+            </exclusion>
+          </exclusions>
         </dependency>
         <dependency>
           <groupId>org.jenkins-ci.plugins</groupId>
           <artifactId>credentials</artifactId>
           <version>2.1.13</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>script-security</artifactId>
+          <version>1.34</version>
           <scope>test</scope>
         </dependency>
         <dependency>
