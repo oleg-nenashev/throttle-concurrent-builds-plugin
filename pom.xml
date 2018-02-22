@@ -57,11 +57,17 @@ THE SOFTWARE.
       <name>Andrew Bayer</name>
       <email>andrew.bayer@gmail.com</email>
       <timezone>-8</timezone>
+      <roles>
+        <role>maintainer (retired)</role>
+      </roles>
     </developer>
     <developer>
       <id>oleg_nenashev</id>
       <name>Oleg Nenashev</name>
       <email>o.v.nenashev@gmail.com</email>
+      <roles>
+        <role>maintainer (retired)</role>
+      </roles>
     </developer>
   </developers>
   
